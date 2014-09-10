@@ -1,0 +1,15 @@
+<h1>List of all current issues</h1>
+<%= link_to 'New ticket', new_ticket_path %>
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Text</th>
+	</tr>
+
+	<% @tickets.each do |ticket| %>
+	<tr>
+		<td><%= ticket.title %></td>
+		<td><%= ticket.description %></td>
+	</tr>
+	<% end %>
+</table>

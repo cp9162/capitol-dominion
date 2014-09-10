@@ -3,6 +3,10 @@ class TicketsController < ApplicationController
 		
 	end
 
+	def index
+		@tickets = Ticket.all
+	end
+
 	def create
   		@ticket = Ticket.new(ticket_params)
  
