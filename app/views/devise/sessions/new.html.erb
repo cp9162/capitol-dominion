@@ -1,6 +1,6 @@
 <!-- <link rel="stylesheet" href="user.css"> -->
 <h2>Log in</h2>
-<div class="form">
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div><%= f.label :email %><br />
   <%= f.email_field :email, autofocus: true %></div>
