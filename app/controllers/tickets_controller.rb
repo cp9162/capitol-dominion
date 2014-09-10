@@ -1,10 +1,11 @@
 class TicketsController < ApplicationController
+	before_action :authenticate_user!
 	def new
 		
 	end
 
 	def index
-		@tickets = Ticket.all
+		@tickets = Ticket.where(:user_id => current_user.id)
 	end
 
 	def create
@@ -23,3 +24,6 @@ class TicketsController < ApplicationController
     	params.require(:ticket).permit(:title, :description)
   	end
 end
+
+
+# tie users to tickets

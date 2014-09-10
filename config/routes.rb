@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'dashboard/show' => 'dashboard#show'
+  devise_for :users
+  get 'dashboard' => 'dashboard#show'
 
   get 'welcome/index'
 
