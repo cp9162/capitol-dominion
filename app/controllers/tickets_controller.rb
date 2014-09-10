@@ -10,6 +10,7 @@ class TicketsController < ApplicationController
 
 	def create
   		@ticket = Ticket.new(ticket_params)
+  		@ticket.user_id = current_user.id
  
   		@ticket.save
   		redirect_to @ticket
