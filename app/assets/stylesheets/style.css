@@ -1,0 +1,39 @@
+body {
+	background-color: green;
+}
+
+header {
+	border: 1px solid black;
+	background-color: white;
+}
+
+.logo {
+	width: 20%;
+	height: 20%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+nav {
+	margin-right: 10px;
+}
+
+.login {
+	float: right;
+	margin-right: 10px;
+}
+
+.container {
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 40px;
+	width: 95%;
+	
+}
+
+footer {
+	clear: both;
+	text-align: right;
+	margin: auto;
+}

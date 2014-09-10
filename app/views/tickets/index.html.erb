@@ -8,10 +8,12 @@
 	</tr>
 
 	<% @tickets.each do |ticket| %>
-	
-		<tr>
-		<td><%= ticket.title %></td>
-		<td><%= ticket.description %></td>
-	</tr>
+		<ul>
+			<li>
+				<%= ticket.title %>
+				<%= ticket.description %>
+			</li>
+		</ul>
+		
 		<% end %>
 </table>
