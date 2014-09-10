@@ -36,4 +36,6 @@ footer {
 	clear: both;
 	text-align: right;
 	margin: auto;
+	height: 30px;
+	background-color: gray;
 }
