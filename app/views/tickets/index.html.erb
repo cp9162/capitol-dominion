@@ -1,19 +1,13 @@
 <h1>List of all current tickets</h1>
 <p>These are a list of all of your open repair tickets. Create a <%= link_to 'new ticket', new_ticket_path %> or <%= link_to 'go back to the dashboard', dashboard_path %></p>
 
-<table>
-	<tr>
-		<th>Title</th>
-		<th>Text</th>
-	</tr>
+
 
 	<% @tickets.each do |ticket| %>
-		<ul>
-			<li>
-				<%= ticket.title %>
-				<%= ticket.description %>
-			</li>
-		</ul>
+	
+	<ul>
+      	<li><%= ticket.title %>- <%= ticket.description %></li>
+    </ul>
+		
 		
 		<% end %>
-</table>
