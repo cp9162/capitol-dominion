@@ -1,8 +1,19 @@
 form {
-	width:500px;
+	width:300px;
 	margin:0px auto;
 	text-align:left;
 	padding:15px;
-	border:1px dashed #333;
-	background-color:#eee;
+	border:1px solid #333;
+	background-color: #fff;
+	opacity: 0.9;
+	color: black;
+	border-radius: 20px;	
+}
+
+h2 {
+	text-align: center;
+}
+
+.signin-links {
+	text-align: center;
 }

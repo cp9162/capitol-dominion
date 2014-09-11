@@ -5,7 +5,7 @@ nav{
 
 .home-top {
 	background-color: #000;
-	width: 95%;
+	width: 100%;
 	height: 500px;
 	clear: both;
 }
@@ -15,4 +15,57 @@ iframe {
 	width: 100%;
 	height: 100%;
 	margin: 20 20 20 20;
+}
+
+.image-float-left {
+	width: 40%;
+	height: 40%;
+	float: left;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+
+.image-float-right {
+	width: 40%;
+	height: 40%;
+	float: right;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.welcome-container {
+	background-color: white;
+	border-radius: 20px;
+}
+.spacer {
+	height: 400px;
+	width: 100%;
+	background: url(/assets/lincoln-memorial.jpg) 70%;
+	clear: both;
+}
+
+.spacer-2 {
+	height: 400px;
+	width: 100%;
+	background: url(/assets/capitol.jpg) 70%;
+	clear: both;
+}
+
+.spacer-3 {
+	height: 400px;
+	width: 100%;
+	background: url(/assets/white-house.jpg)70%;
+	background-repeat: no-repeat;	
+	clear: both;
+}
+
+.gallery {
+	clear: both;
+	padding-left: 70px;
+}
+
+.gallery-images {
+	float: left;
+	clear: right;
+	margin: 20px;
 }

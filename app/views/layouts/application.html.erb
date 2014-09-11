@@ -7,26 +7,29 @@
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header><a href="/"><img class="logo" src="app/assets/capitol_dominion_logo.png" alt="logo"></a>
+	<header><a href="/"><img class="logo" src="/assets/capitol_dominion_logo.png" alt="logo"></a>
 
 	<div class="login">
 	<% if user_signed_in? %>
-		Signed in as <%= current_user.email %> Not you? <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+		Signed in as <%= current_user.email %> | <%= link_to "dashboard", dashboard_path %> | Not you? <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
 		<% else %>
 			<%= link_to "sign in", new_user_session_path %>
 	<% end %>
 	</div>
-	<br style="clear:both;">
-	<nav><a href="#about">
-	about</a> / <a href="#amenities">amenities</a> / <a href="#gallery">gallery</a> / <a href="#floorplan">floor plan</a></nav>
+	
+	<nav><a href="#about">about</a> / <a href="#amenities">amenities</a> / <a href="#gallery">gallery</a> / <a href="#floorplan">floor plan</a></nav>
 	<br style="clear:both;">
 	</header>
 <div class="container">
 <%= yield %>
+<footer><a href="#about">
+	about</a> / <a href="#amenities">amenities</a> / <a href="#gallery">gallery</a> / <a href="#floorplan">floor plan</a>
+</footer>
 </div>
-<footer><a href="#about">about</a> / 
-			<a href="#amenities">amenities</a> / <a href="#gallery">gallery</a> / <a href="#floorplan">floor plan</a></footer>
+
 </body>
+<div class="copyright">All rights reserved. Capitol Dominion</div>
 </html>
