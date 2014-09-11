@@ -47,14 +47,14 @@ iframe {
 .spacer-2 {
 	height: 400px;
 	width: 100%;
-	background: url(/assets/capitol.jpg) 70%;
+	background: image-url('capitol.jpg') 70%;
 	clear: both;
 }
 
 .spacer-3 {
 	height: 400px;
 	width: 100%;
-	background: url(/assets/white-house.jpg)70%;
+	background: image-url('white-house.jpg')70%;
 	background-repeat: no-repeat;	
 	clear: both;
 }
