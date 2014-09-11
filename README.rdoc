@@ -76,5 +76,12 @@ Day 2
 
 
 Day 3
+- Debuging
 - View pages css
+
+Additional features/icebox
+---------------------------
+image upload (paperclip gem)
+payment gateway (stripe api / stripe gem)
+text message rent reminders
 
