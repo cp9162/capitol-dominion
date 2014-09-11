@@ -1,4 +1,4 @@
-<h1>This is my show for individual tickets</h1>
+<h1>Current Open Ticket</h1>
 
 <p>
   <strong>Title:</strong>
@@ -9,3 +9,5 @@
   <strong>Text:</strong>
   <%= @ticket.description %>
 </p>
+
+<%= link_to 'Go back to the Dashboard', dashboard_path %>
