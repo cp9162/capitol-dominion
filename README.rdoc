@@ -1,28 +1,80 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Ruby version- 4.0
+
+System dependencies-
+gem 'rails_12factor'
+gem 'devise'
+
+
+
+Database creation
+postresql db required
+
+Configuration
+
+App Developement Steps
+------------------------
+Create new rails app
+	$ rails new property_app -d postgresql -T
+Create new git repository
+	$ git init
+Get status & make initial commit
+	$ git status
+	$ git add .
+	$ git status
+	$ git commit -m "Initial Commit"
+Create a new branch to install Devise
+	$ git checkout -b add-devise
+Add devise gem
+	gemfile.rb
+		gem 'devise'
+Install devise
+	$ bundle
+Generate devise
+	$ rails g devise:install
+Generate devise views
+	rails g devise:view
+Generate devise model
+	rails g devise:model
+Create Welcome Controller
+Create Welcome View Directory
+Create Welcome View index.html.erb
+
+Notes for Prof
+---------------
+
+Pre-work
+---------
+Research the devise gem (for user authentication and tennant login)
+Research a gem for file uploads (and how to mail them to me)
+Research a gem for email (active mailer)
+Research a payment api (stripe)
+
+1. Design Wireframes of Pages
+2. Create User Stories
+2. Create an ERD
+3. Create the Ruby App
+4. Create the Git Repo
+
+Timebox Schedule
+-----------------
+Day 1
+-Research
+-Wireframes
+-Erd
+-Create black ruby app
+-Intial Commit to Git
+-Set up devise gem
+
+Day 2
+-Develop all models, views, and controllers
+-Add paperclip gem
+-Add 
+
+
+Day 3
+- View pages css
+
